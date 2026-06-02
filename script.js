@@ -307,7 +307,7 @@
       return `<span class="${fd}">${father}</span> · <span class="${md}">${mother}</span>`;
     }
 
-    const parentsHTML = /*`
+    const parentsHTML = `
       <div class="parent-row">
         ${parentLine(g.father, g.mother, g.fatherDeceased, g.motherDeceased)}
         <span class="parent-dot">●</span>
@@ -318,7 +318,7 @@
         <span class="parent-dot">●</span>
         의 딸 <span class="child-name">${b.name}</span>
       </div>
-    `*/;
+    `;
 
     $('#greetingParents').innerHTML = parentsHTML;
   }
